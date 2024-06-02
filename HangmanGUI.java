@@ -87,7 +87,7 @@ public class HangmanGUI extends JFrame {
                     stats.incrementLosses();
                 }
                 if (game.hasReachedMaxAttempts()) {
-                    JOptionPane.showMessageDialog(null, "Przegrałeś po 10 próbach!");
+                    JOptionPane.showMessageDialog(null, "Przegrałeś po" + game.getAttempts() + "próbach!");
                     newGame();
                 }
             } else if (correct) {
